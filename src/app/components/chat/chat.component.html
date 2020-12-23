@@ -1,0 +1,24 @@
+<h5>
+  <span class="badge bg-dark mb-2">Mensajes</span>
+</h5>
+
+<div id="chat-mensajes">
+  <ul class="list-group list-group-flush">
+
+    <li *ngFor="let mensaje of mensajes" class="list-group-item border-0">
+      <strong>{{ mensaje.de }}:</strong> {{ mensaje.cuerpo }}
+    </li>
+
+  </ul>
+</div>
+
+<form (ngSubmit)="enviar()">
+  <input type="text"
+         [(ngModel)]="texto"
+         class="form-control mt-3"
+         name="texto"
+         placeholder="Mensaje..."
+         autofocus
+         autocomplete="off"
+         required>
+</form>
