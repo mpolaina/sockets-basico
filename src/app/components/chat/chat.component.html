@@ -1,12 +1,14 @@
-<h5>
-  <span class="badge bg-dark mb-2">Mensajes</span>
-</h5>
+<h4>
+  <span class="badge bg-info mb-2">Mensajes</span>
+</h4>
 
 <div id="chat-mensajes">
   <ul class="list-group list-group-flush">
 
-    <li *ngFor="let mensaje of mensajes" class="list-group-item border-0">
-      <strong>{{ mensaje.de }}:</strong> {{ mensaje.cuerpo }}
+    <li *ngFor="let mensaje of mensajes" class="list-group-item border-0 py-1">
+      <strong class="text-info">{{ mensaje.de }}:</strong>
+      <br>
+      {{ mensaje.cuerpo }}
     </li>
 
   </ul>

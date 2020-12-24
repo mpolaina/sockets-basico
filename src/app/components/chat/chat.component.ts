@@ -1,7 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ChatService } from '../../services/chat.service';
 import { Subscription } from 'rxjs';
-import { mensaje } from '../../../../../01-server/sockets/sockets';
 
 @Component({
   selector: 'app-chat',
